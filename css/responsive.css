@@ -1,0 +1,221 @@
+ /* Extra small devices (portrait phones, less than 576px) */
+/* @media (max-width: ){} */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+
+     /*INDEX*/
+    
+    /*GAMES*/
+    
+    .ina{
+        width: 45%;
+    }
+
+    .game{
+        margin-left: 0;
+    }
+    
+  
+
+    /*Services*/
+
+    /*About*/
+
+    /*Contact*/
+    
+    .title-page-banner h1{
+        font-size:55px;
+    }
+
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (max-width: 767px) { 
+
+    /*INDEX*/
+
+  
+
+    .navbar-custom{
+        background: #fff;
+    }
+
+    .navbar-brand{
+        color:#222 !important;
+    }
+
+    .nav-link{
+        color:#222 !important;
+    }
+
+    .fa.fa-navicon{
+        color:#222 !important;
+    }
+
+    .home-content p{
+        font-size:16px;
+        padding-top:15px;
+    }
+
+    .main-btn, .white-btn, .outline-btn {
+         
+        padding: 10px 25px;
+        font-size:12px;
+       
+    }
+
+    #separator{
+        background-attachment:initial;
+    }
+
+
+    /*GAMES*/
+
+    
+
+    /*Services*/
+
+    .inacapo{
+        width:70%;
+    }
+
+    .inacapo-container{
+        text-align: center;
+    }
+
+    .dropdown:hover > .dropdown-menu{
+      border-left: 3px solid #6195FF;
+      border-bottom: 1px solid #f2f2f2;
+      border-top: 1px solid #f2f2f2;
+      border-right: 1px solid #f2f2f2;
+      box-shadow: none;
+         
+    }
+
+    .dropdown-divider{
+        display: block;
+    }
+
+ 
+
+    /*About*/
+ 
+    /* .pres-img{
+      
+        height:95% !important;
+    } */
+    
+    /*Contact*/
+
+    .contact-form{
+        padding-left:20px;
+        padding-right:20px;
+    }
+
+    .contact-banner{
+        height: auto;
+        padding-top:5vh;
+        padding-bottom:2em;
+    }
+
+    .about-banner{
+        height: auto;
+        padding-top:5vh;
+        padding-bottom:2em;
+    }
+ }
+
+ /* Large devices (desktops, 992px and up) */
+@media (max-width: 991px) { 
+
+    /*INDEX*/
+    .title-resume-about{
+        font-size:22px;
+    }
+    .about-resume-description{
+        font-size: 14px;
+        padding:0;
+    }
+
+    .about-resume-image{
+        padding-top:20%;
+    }
+
+
+    /*GAMES*/
+
+    .content{
+       margin-top:-60px;
+    }
+
+    .fontp{
+        font-size:50px;
+        line-height:50px;
+    }
+
+    .fontp2{
+       font-size:16px;
+       
+    }
+
+    /*Services*/
+
+    .uni-img{
+        padding-top:90px;
+    }
+
+    .ad-description{
+        margin-top:5vh;
+    }
+
+    .dash-img{
+        padding-top:50px !important;
+    }
+
+    /*About*/
+
+    /* .pres-img{
+            
+            height: 55%;
+    } */
+
+    /*Contact*/
+
+    .questions-answer{
+        padding-left:1%;
+    }
+
+ }
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {  
+
+    /*INDEX*/
+    
+    /*GAMES*/
+
+    /*Services*/
+
+ 
+  
+
+    /*About*/
+
+    /*Contact*/
+
+
+}
+
+
+
+@media(max-width: 1400px){
+
+    /*SPECIAL*/
+
+    .inacapo{
+        position: relative;
+        left:0;
+    }
+
+}

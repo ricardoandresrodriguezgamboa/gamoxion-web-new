@@ -1,0 +1,175 @@
+<section id="contact">
+    <div class="contact-banner">
+          <div class="container">
+                <div class="row">
+                        <div class="col-md-12">
+                            <div class="title-page-banner">
+                                    <h1>Contacto</h1>
+                                    <p class="p2">Cotice con nosotros su proyecto y le responderemos a la brevedad.</p>
+                              </div>
+                             <!-- {{-- <div class="text-center">
+                                <button style="height:35px; padding-top:5px;" class="outline-btn"><i class="fas fa-chevron-down fa-md"></i></button>
+                             </div> --}} -->
+                        </div>
+                    </div>
+          </div>
+    </div>
+
+ <section id="contact-details-info">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+              <div class="title-page-big">
+                  <h1>Detalles de Contacto</h1>
+                  <div class="title-border"></div>
+                  <br> 
+                  <br>
+              </div>
+          </div>
+          <div class="col-md-12">
+              <p class="mx-auto des-op" style="text-align:center; max-width:75%; padding-top:20px;">Nos puedes contactar a través de los siguientes medios.</p>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
+             <div class="contact-details-card">
+                <i style="padding-bottom:10px;" class="fas fa-mobile-alt fa-2x blue-i"></i>
+                <p>LLámanos al<br>
+                +(56) 9 4529 1449 <br> +(56) 9 8751 9976
+                </p>
+             </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
+              <div class="contact-details-card">
+                <i  style="padding-bottom:10px;" class="fas fa-map-marker-alt fa-2x blue-i"></i>
+                <p>Región Metropolitana <br> Santiago, Chile.</p>
+              </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
+              <div class="contact-details-card">
+                <i  style="padding-bottom:10px;" class="fas fa-envelope fa-2x blue-i"></i>
+                <p>Contáctanos a través de<br> contacto@gamoxion.com</p>
+              </div>
+          </div>
+        </div>
+      </div>
+ </section>
+
+
+
+    <div class="container">
+        <div class="row">    
+                <div class="col-md-7 mx-auto"  data-aos="fade-up" data-aos-duration="1000" >
+                    <form method="POST" action="{{ route('contact.store') }}" class="contact-form">
+                            <!-- {{ csrf_field() }}     -->
+                            <!-- @if(Session::has('successmessage'))
+                            <div class="alert alert-success" >
+                                {{Session::get('successmessage')}}
+                            </div>
+                            @endif -->
+                            <div class="row">
+                               <!-- {{-- <div class="col-md-12">
+                                 <div class="contact-form-icon">
+                                    <i class="fas fa-envelope-open-text fa-2x"></i>
+                                 </div>
+                               </div> --}} -->
+                                <div class="col-md-12">
+                                  <div class="title-page-left">
+                                      <h2>Contactanos</h2>
+                                      <div class="title-border-left"></div>
+                                      <br>
+                                      <p style="font-size:14px;" class="text-muted">Rellena los siguientes campos, te responderemos a la brevedad.</p>
+                                  </div>  
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="mat-div">
+                                      <label for="first-name" class="mat-label">Nombre *</label>
+                                      <input type="text" class="mat-input" id="first-name" name="name" required>
+                                       <!-- @if ($errors->has('name'))
+                                        <small class="form-text invalid-feedback">{{$errors->first('name')}}</small>
+                                       @endif -->
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="mat-div">
+                                      <label for="last-name" class="mat-label">Apellido *</label>
+                                      <input type="text" class="mat-input" id="last-name" name="lastname" required>
+                                        <!-- @if ($errors->has('lastname'))
+                                        <small class="form-text invalid-feedback">{{$errors->first('lastname')}}</small>
+                                       @endif -->
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="mat-div">
+                                      <label for="phone" class="mat-label">Teléfono *</label>
+                                      <input type="text" class="mat-input" id="phone" name="phone" required>
+                                        <!-- @if ($errors->has('phone'))
+                                        <small class="form-text invalid-feedback">{{$errors->first('phone')}}</small>
+                                       @endif -->
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="mat-div">
+                                      <label for="company" class="mat-label">Empresa *</label>
+                                      <input type="text" class="mat-input" id="company" name="company" required>
+                                        <!-- @if ($errors->has('company'))
+                                        <small class="form-text invalid-feedback">{{$errors->first('company')}}</small>
+                                       @endif -->
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="mat-div">
+                                      <label for="email" class="mat-label">E-mail *</label>
+                                      <input type="text" class="mat-input" id="email" name="email" required>
+                                       <!-- @if ($errors->has('email'))
+                                        <small class="form-text invalid-feedback">{{$errors->first('email')}}</small>
+                                       @endif -->
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="mat-div">
+                                      <label for="country" class="mat-label">País *</label>
+                                      <input type="text" class="mat-input" id="country" name="country" required>
+                                       <!-- @if ($errors->has('country'))
+                                        <small class="form-text invalid-feedback">{{$errors->first('country')}}</small>
+                                       @endif -->
+                                  </div>
+                                </div>
+                                <div class="col-md-12">
+                                  <div class="mat-div">
+                                      <label for="message" class="mat-label">Mensaje *</label>
+                                      <textarea style="resize:none;" name="message" class="mat-input" required id="message" rows="4"></textarea>
+                                        <!-- @if ($errors->has('message'))
+                                        <small class="form-text invalid-feedback">{{$errors->first('message')}}</small>
+                                       @endif -->
+                                  </div>
+                                </div>
+                                <!--<div class="col-md-6">-->
+                                <!--    <div class="#">-->
+                                <!--      <label for="captcha" class="mat-label">CAPTCHA</label>-->
+                                <!--      <input type="checkbox" id="captcha" class="mat-input"> -->
+                                <!--    </div>-->
+                                <!--</div>-->
+                                <div class="col-md-12">
+                                  <div class="form-buttons">
+                                      <button class="main-btn" type="submit"><i class="fas fa-paper-plane"></i> Enviar</button>
+                                      <button class="white-btn" type="reset">Limpiar</button>
+                                  </div>
+                                </div>
+                            </div>
+                      </form>
+                  </div>
+                <div class="container">
+                  <div class="col-md-5 mx-auto" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="social-media">
+                        <h5 style="padding-bottom:1em;" class="text-center">¡Síguenos en nuestras Redes Sociales! <!--<span><i class="fas fa-thumbs-up blue-i"></i></span>--></h5> 
+                        <div style="padding-bottom:3em;" class="social text-center">
+                            <a target="_blank" href="https://www.facebook.com/gamoxion"> <i class="fab fa-facebook-f fa-lg"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/company/gamoxion/"> <i class="fab fa-linkedin-in fa-lg"></i></a>
+                            <a target="_blank" href="https://web.whatsapp.com/send?phone=56987519976"> <i class="fab fa-whatsapp fa-lg"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/gamoxion"> <i class="fab fa-instagram fa-lg"></i></a>
+                          </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
