@@ -1,187 +1,1035 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Gamoxion es una empresa dedicada al desarrollo de soluciones informaticas,diseño web, desarollo de videojuegos,desarollo de apps moviles y aplicaciones de escritorio">
-    <meta name="Keywords" content="Gamoxion,gamoxion,gamo,xion,gamotion,paginas web,desarrollo de paginas web,ecommerces,plataformas web,desarrollo de videojuegos,videojuegos para empresa,advergaming,gamification,desarrollo de aplicaciones moviles, desarollo de aplicaciones de escritorio,soluciones IT,soluciones informaticas,inacap la aventura, speedomart, unimarc the run" /> 
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="/css/bootstrap-reboot.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="css/superslides.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,600,700,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="js/jquery.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/d3a5b8f9d1.js"></script>
-
-    <meta property="og:url" content="http://www.gamoxion.com" />
-    <meta property="og:type"               content="website" />
-    <meta property="og:title"              content="Gamoxion : Servicios Informaticos" />
-    <meta property="og:description"        content="Ofrecemos servicios informáticos destacando siempre profesionalismo, calidad, confianza, entusiasmo e innovación." />
-    <meta property="og:image"              content="https://www.gamoxion.com/image/cover.jpg" />
-    <meta property="fb:app_id"              content="900871810283528" />
-
-    <title>Gamoxion</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/image/favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/image/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/image/favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="/image/favicon_io/site.webmanifest">
-
-</head>
-<body>
-    <div class="container-full">        
-                <nav id="navbarLayout" class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
-                        <a class="navbar-brand" href="#" onclick="loadPage('home')" >GAMOXION</a>
-                        <img src="" alt="">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon">
-                                <i class="fa fa-navicon"></i>
-                          </span>
+﻿<!doctype html>
+<html class="no-js" lang="es">
+    <head>
+        <title>Gamoxion</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta name="description" content="Gamoxion es una empresa dedicada al desarrollo de soluciones informaticas,diseño web, desarollo de videojuegos,desarollo de apps moviles y aplicaciones de escritorio">
+        <meta name="Keywords" content="Gamoxion,gamoxion,gamo,xion,gamotion,paginas web,desarrollo de paginas web,ecommerces,plataformas web,desarrollo de videojuegos,videojuegos para empresa,advergaming,gamification,desarrollo de aplicaciones moviles, desarollo de aplicaciones de escritorio,soluciones IT,soluciones informaticas,inacap la aventura, speedomart, unimarc the run" /> 
+        <meta name="author" content="Gamoxion">
+        <!-- favicon icon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="images/favicon_io/site.webmanifest">
+        <!-- google fonts preconnect -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- style sheets and font icons -->
+        <link rel="stylesheet" href="css/vendors.min.css"/>
+        <link rel="stylesheet" href="css/icon.min.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/responsive.css"/>
+        <link rel="stylesheet" href="css/startup.css" />
+    </head>
+    <body data-mobile-nav-style="classic">
+        <!-- start header -->
+        <header> 
+            <!-- start navigation -->
+        
+            <nav class="navbar navbar-expand-lg header-transparent bg-transparent header-reverse" data-header-hover="dark">
+                <div class="container-fluid">
+                    <div class="col-auto col-lg-2 me-lg-0 me-auto">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/logotemp.png" data-at2x="images/demo-startup-logo-white@2x.png" alt="" class="default-logo">
+                            <img src="images/logotemp.png" data-at2x="images/demo-startup-logo-black@2x.png" alt="" class="alt-logo">
+                            <img src="images/logotemp.png" data-at2x="images/demo-startup-logo-black@2x.png" alt="" class="mobile-logo"> 
+                        </a>
+                    </div>
+                    <div class="col-auto ms-auto md-ms-0 menu-order position-static">
+                        <button class="navbar-toggler float-start" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-line"></span>
+                            <span class="navbar-toggler-line"></span>
+                            <span class="navbar-toggler-line"></span>
+                            <span class="navbar-toggler-line"></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                          <ul class="navbar-nav ml-auto">
-                            <li class="home nav-item active">
-                              <a class="nav-link"  onclick="loadPage('home')" >Inicio <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="games nav-item">
-                              <a class="nav-link"  onclick="loadPage('games')" >Videojuegos</a>
-                            </li>
-                            <li class="services nav-item dropdown">
-                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Servicios <i style="position:absolute; top:9px; right:-5px;" class="fas fa-sort-down"></i>
-                              </a>
-                              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <a class="dropdown-item" onclick="loadPage('advergaming')" >Advergaming / Gamificación</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" onclick="loadPage('appmovil')" >Aplicaciones Móviles</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" onclick="loadPage('web')">Diseño Web</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" onclick="loadPage('desktop')" >Aplicaciones de Escritorio</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" onclick="loadPage('it-solutions')" >Soluciones Informáticas</a> 
-                              </div>
-                            </li>
-                            <li class="about nav-item">
-                                <a class="nav-link" onclick="loadPage('about')">Nosotros</a>
-                            </li>
-                             <li class="contact nav-item">
-                                <a class="nav-link"  onclick="loadPage('contact')">Contacto</a>
-                            </li>
-                            <!-- {{-- <li class="nav-item dropdown">
-                                    <a href="#" id="dropdownlanguage" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                      <i class="fas fa-globe-americas"></i>
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownlanguage">
-                                    <a class="dropdown-item" href="#">ES</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">EN</a>
-
-                              </div>
-                               </li> --}} -->
-                          </ul>
+                        <div class="collapse navbar-collapse" id="navbarNav"> 
+                            <ul class="navbar-nav alt-font"> 
+                                <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                                <li class="nav-item"><a href="demo-startup-who-we-are.html" class="nav-link">Nosotros</a></li>
+                                <li class="nav-item dropdown dropdown-with-icon">
+                                    <a href="demo-startup-services.html" class="nav-link">Servicios</a>
+                                    <i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li>
+                                            <a href="demo-startup-services-details.html"><i class="line-icon-Gamepad"></i>
+                                                <div class="submenu-icon-content">
+                                                    <span>Advergaming</span>
+                                                    <p>Videojuegos publicitarios</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="demo-startup-services-details.html"><i class="line-icon-Smartphone-3"></i>
+                                                <div class="submenu-icon-content">
+                                                    <span>Apps Móviles</span>
+                                                    <p>Aplicaciones móviles</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="demo-startup-services-details.html"><i class="line-icon-Monitor-phone"></i>
+                                                <div class="submenu-icon-content">
+                                                    <span>Desarrollo Web</span>
+                                                    <p>Diseño y desarrollo web</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="demo-startup-services-details.html"><i class="line-icon-Window-2"></i>
+                                                <div class="submenu-icon-content">
+                                                    <span>Apps de Escritorio</span>
+                                                    <p>Aplicaciones escritorio</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="demo-startup-services-details.html"><i class="line-icon-Code-Window"></i>
+                                                <div class="submenu-icon-content">
+                                                    <span>Soluciones TI</span>
+                                                    <p>Soluciones informáticas</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a href="demo-startup-clients.html" class="nav-link">Clients</a></li>
+                                <li class="nav-item"><a href="demo-startup-blog.html" class="nav-link">Blog</a></li>
+                                <li class="nav-item"><a href="demo-startup-contact.html" class="nav-link">Contact</a></li>
+                            </ul>
                         </div>
-                      </nav>
+                    </div>
+                    <div class="col-auto text-end d-none d-sm-flex">
+                        <div class="header-icon">
+                            <div class="header-button"><a href="demo-business-contact.html" class="btn btn-very-small btn-transparent-white-light btn-rounded">Cotizar</a></div>
+                            <div class="header-search-icon icon">
+                                <!-- <a href="#" class="search-form-icon header-search-form" aria-label="search"><i class="feather icon-feather-search"></i></a> -->
+                                <!-- start search input -->
+                                <div class="search-form-wrapper">
+                                    <button title="Close" type="button" class="search-close alt-font">×</button>
+                                    <form id="search-form" role="search" method="get" class="search-form text-left" action="search-result.html">
+                                        <div class="search-form-box">
+                                            <h2 class="text-dark-gray fw-700 ls-minus-1px text-center mb-4 alt-font">What are you looking for?</h2>
+                                            <input class="search-input alt-font" id="search-form-input5e219ef164995" placeholder="Enter your keywords..." name="s" value="" type="text" autocomplete="off">
+                                            <button type="submit" class="search-button">
+                                                <i class="feather icon-feather-search" aria-hidden="true"></i> 
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- end search input -->
+                            </div>
+                            <div class="header-push-button icon">
+                                <div class="push-button">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span> 
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </nav>
+            <!-- end navigation -->
+            <!-- start push popup -->
+            <div class="push-menu push-menu-style-2 ps-50px pe-50px pt-4 pb-4 bg-white">
+                <div class="left-circle bg-gradient-emerald-blue-emerald-green"></div>
+                <span class="close-menu text-white bg-dark-gray"><i class="fa-solid fa-xmark"></i></span>
+                <div class="push-menu-wrapper" data-scroll-options='{ "theme": "dark" }'>
+                    <div class="push-menu-header pt-10 pb-30 mb-30 d-block">
+                        <h4 class="alt-font fw-500 text-white lh-42">Scalable business for <span class="text-decoration-line-bottom-medium fw-700">startups</span></h4>
+                    </div>
+                    <div class="push-menu-address pt-30 lg-pt-10">
+                        <div class="icon-with-text-style-01 mb-15px">
+                            <div class="feature-box feature-box-left-icon last-paragraph-no-margin">
+                                <div class="feature-box-icon me-15px">
+                                    <i class="feather icon-feather-map-pin text-dark-gray lh-inherit"></i>
+                                </div>
+                                <div class="feature-box-content"> 
+                                    <p class="w-90 lh-26">401 Broadway, 24th Floor New York, NY 10013.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon-with-text-style-01 mb-15px">
+                            <div class="feature-box feature-box-left-icon last-paragraph-no-margin">
+                                <div class="feature-box-icon me-15px">
+                                    <i class="feather icon-feather-mail text-dark-gray lh-inherit"></i>
+                                </div>
+                                <div class="feature-box-content"> 
+                                    <a href="mailto:info@yourdomain.com">info@yourdomain.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icon-with-text-style-01">
+                            <div class="feature-box feature-box-left-icon last-paragraph-no-margin">
+                                <div class="feature-box-icon me-15px">
+                                    <i class="feather icon-feather-phone-call text-dark-gray lh-inherit"></i>
+                                </div>
+                                <div class="feature-box-content"> 
+                                    <a href="tel:1800222000">1-800-222-000</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="separator-line-1px w-100 bg-extra-medium-gray d-block mt-30px mb-30px"></div>
+                    </div>
+                    <div class="push-menu-social last-paragraph-no-margin">
+                        <div class="elements-social social-text-style-01">
+                            <ul class="medium-icon dark fw-500">
+                                <li><a class="facebook" href="https://www.facebook.com/" target="_blank">Fb.</a></li>
+                                <li><a class="linkedin" href="http://www.linkedin.com" target="_blank">In.</a></li> 
+                                <li><a class="twitter" href="http://www.twitter.com" target="_blank">Tw.</a></li> 
+                                <li><a class="dribbble" href="http://www.dribbble.com" target="_blank">Dr.</a></li> 
+                            </ul>
+                        </div>
+                        <p class="fs-14">&COPY; Copyright 2024 <a href="index.html" target="_blank">Crafto</a></p>
+                    </div>
+                </div>
             </div>
+            <!-- end push popup -->
+        </header>
+        <!-- end header -->
 
-
-    <!-- content full page -->
-    <div id="content-page"></div>
-
-    <div class="container-full">
-        <footer id="footerLayout">
-           <div class="container">
-               <div class="row">
-                   <div class="col-md-3">
-                        <div class="company-logo">
-                           <img class="img-fluid" src="image/logotemp.png" height="180px" width="180px" alt="logo">
-                        </div>
-                         <div class="company-info" style="text-align:left">
-                            <p>Somos una empresa de servicios de tecnologías de la información con principios intrinsicos, profesionalismo, calidad, confianza, entusiasmo e innovación.</p>
-                         </div>
-                         <div class="social">
-                             <a target="_blank" href="https://www.facebook.com/gamoxion"> <i class="fab fa-facebook-f"></i></a>
-                             <a target="_blank" href="https://www.linkedin.com/company/gamoxion/"> <i class="fab fa-linkedin-in"></i></a>
-                             <a target="_blank" href="https://web.whatsapp.com/send?phone=56987519976"> <i class="fab fa-whatsapp"></i></a>
-                             <a target="_blank" href="https://www.instagram.com/gamoxion"> <i class="fab fa-instagram"></i></a>
-                          </div>
-                   </div>
-                   <div class="col-md-3">
-                       <div class="title-footer">
-                            ULTIMOS PROYECTOS
-                       </div>
-                       <div class="description-footer">
-                         <p>Unimarc The Run - 2019 <br> <small class="text-muted">Advergaming</small></p>
-                         <p>Inacap La Aventura - 2018 <br> <small class="text-muted">Advergaming</small></p>
-                       </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="title-footer">
-                             DETALLES DE CONTACTO
-                        </div>
-                        <div class="description-footer">
-                            <p><i class="fas fa-map-marker-alt fa-md"></i> Region Metropolitana, <br> Santiago, Chile</p>
-                            <p><i class="fas fa-envelope fa-md"></i> contacto@gamoxion.com</p>
-                            <p><i class="fas fa-mobile-alt fa-md"></i> +(56) 9 4529 1449</p>
-                            <p><i class="fas fa-mobile-alt fa-md"></i> +(56) 9 8751 9976</p>
-                            <!-- {{-- <p>Lun-Jue: 9:30 - 21:00</p>
-                            <p>Vie: 6:00 - 21:00</p>
-                            <p>Sab: 10:00 - 15:00</p> --}} -->
+        <!-- start section -->
+        <section class="p-0 bg-dark-gray">
+            <div class="swiper lg-no-parallax full-screen md-h-600px sm-h-500px swiper-light-pagination ipad-top-space-margin drag-cursor" data-slider-options='{ "grabCursor":true, "slidesPerView": 1, "loop": true, "parallax": true, "speed": 1200, "autoplay": { "delay": 4000, "disableOnInteraction": false }, "pagination": { "el": ".swiper-pagination-bullets", "clickable": true }, "navigation": { "nextEl": ".slider-one-slide-next-1", "prevEl": ".slider-one-slide-prev-1" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "slide" }'>
+                <div class="swiper-wrapper">
+                    <!-- start slider item -->
+                    <div class="swiper-slide overflow-hidden">
+                        <div class="cover-background position-absolute top-0 start-0 w-100 h-100" style="background-image:url('images/poster_home2.png');" data-swiper-parallax="1000">
+                            <div class="opacity-light bg-gradient-black-green"></div>
+                            <div class="container h-100" data-swiper-parallax="-300">
+                                <div class="row align-items-center justify-content-center h-100 text-center">
+                                    <div class="col-xl-7 col-lg-9 col-md-10 position-relative text-white">
+                                        <span class="opacity-7 fs-80 xs-fs-60 alt-font fw-700 text-shadow-extra-large ls-minus-2px mb-45px sm-mb-30px xs-mb-20px d-inline-block swiper-parallax-fancy-text" data-fancy-text='{ "effect": "rotate", "string": ["GAMOXION"] }'></span>
+                                        <span data-anime='{ "el": "childs", "translateY": [0, 0], "opacity": [0,0.7], "duration": 5000, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'><span class="fw-300 fs-22 opacity-7 mb-15px d-inline-block">Brindamos soluciones en tecnologías de la información con profesionalismo, calidad y confianza, impulsando la innovación en cada proyecto.</span></span>
+                                        <div data-anime='{ "el": "childs", "translateY": [80, 0], "opacity": [0,1], "duration": 600, "delay": 1000, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                                            <a href="index.html" target="_blank" class="btn btn-large btn-gradient-emerald-blue-emerald-green btn-hover-animation-switch btn-round-edge btn-box-shadow me-20px xs-m-10px">
+                                                <span> 
+                                                    <span class="btn-text">Discover crafto</span>
+                                                    <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
+                                                    <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
+                                                </span>
+                                            </a>
+                                            <a href="index.html" target="_blank" class="btn btn-large btn-transparent-white-light border-1 btn-hover-animation btn-box-shadow btn-round-edge xs-m-10px">
+                                                <span>
+                                                    <span class="btn-text">Get started now</span>
+                                                    <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
+                                                </span> 
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>   
                         </div>
                     </div>
-                    <div class="col-md-3">
-                            <div class="title-footer">
-                                  ENLACES RÁPIDOS
+                    <!-- end slider item -->
+                    <!-- start slider item -->
+                    <div class="swiper-slide overflow-hidden">
+                        <div class="cover-background position-absolute top-0 start-0 w-100 h-100" style="background-image:url('images/poster_web.png');" data-swiper-parallax="1000" >
+                            <div class="opacity-light bg-gradient-black-green"></div>
+                            <div class="container h-100" data-swiper-parallax="-300">
+                                <div class="row align-items-center justify-content-center h-100 text-center">
+                                    <div class="col-xl-7 col-lg-9 col-md-10 position-relative text-white">
+                                        <span class="opacity-7 fs-80 xs-fs-60 alt-font fw-700 text-shadow-extra-large ls-minus-2px mb-45px sm-mb-30px xs-mb-20px d-inline-block swiper-parallax-fancy-text" data-fancy-text='{ "effect": "rotate", "string": ["GAMOXION"] }'></span>
+                                        <span data-anime='{ "el": "childs", "translateY": [0, 0], "opacity": [0,0.7], "duration": 5000, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'><span class="fw-300 fs-22 opacity-7 mb-15px d-inline-block">Brindamos soluciones en tecnologías de la información con profesionalismo, calidad y confianza, impulsando la innovación en cada proyecto.</span></span>
+                                        <span data-anime='{ "el": "childs", "translateY": [80, 0], "opacity": [0,1], "duration": 600, "delay": 500, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                                            <a href="index.html" target="_blank" class="btn btn-large btn-gradient-emerald-blue-emerald-green btn-hover-animation-switch btn-round-edge btn-box-shadow me-20px xs-m-10px">
+                                                <span> 
+                                                    <span class="btn-text">Discover crafto</span>
+                                                    <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
+                                                    <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
+                                                </span>
+                                            </a>
+                                            <a href="index.html" target="_blank" class="btn btn-large btn-transparent-white-light border-1 btn-hover-animation btn-box-shadow btn-round-edge xs-m-10px">
+                                                <span>
+                                                    <span class="btn-text">Get started now</span>
+                                                    <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
+                                                </span> 
+                                            </a>
+                                        </span>
+                                    </div> 
+                                </div>
                             </div>
-                            <div  class="description-footer">
-                                <a href="/">Inicio</a>
-                                <a href="/games">Juegos</a>
-                                <a href="/advergaming">Advergaming</a>
-                                <a href="/appmovil">Aplicaciones Móviles</a>
-                                <a href="/web">Diseño Web</a>
-                                <a href="/desktop">Aplicaciones de Escritorio</a>
-                                <a href="/it-solutions">Soluciones Informáticas</a>
-                                <a href="/about">Nosotros</a>
-                                <a href="/contact">Contacto</a>
-                            </div>
+                        </div>
                     </div>
-               </div>
-           </div>
-        </footer>
-        <footer id="endfooter">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p>© <span id="fecha-actual"></span> Gamoxion. Todos los derechos reservados.</p>
+                    <!-- end slider item -->
+                    <!-- start slider item -->
+                    <div class="swiper-slide overflow-hidden">
+                        <div class="cover-background position-absolute top-0 start-0 w-100 h-100" style="background-image:url('images/poster_sol.png');" data-swiper-parallax="1000">
+                            <div class="opacity-light bg-gradient-black-green"></div>
+                            <div class="container h-100" data-swiper-parallax="-300">
+                                <div class="row align-items-center justify-content-center h-100 text-center">
+                                    <div class="col-xl-7 col-lg-9 col-md-10 position-relative text-white">
+                                        <span class="opacity-7 fs-80 xs-fs-60 alt-font fw-700 text-shadow-extra-large ls-minus-2px mb-45px sm-mb-30px xs-mb-20px d-inline-block swiper-parallax-fancy-text" data-fancy-text='{ "effect": "rotate", "string": ["GAMOXION"] }'></span>
+                                        <span data-anime='{ "el": "childs", "translateY": [0, 0], "opacity": [0,0.7], "duration": 5000, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'><span class="fw-300 fs-22 opacity-7 mb-15px d-inline-block">Brindamos soluciones en tecnologías de la información con profesionalismo, calidad y confianza, impulsando la innovación en cada proyecto.</span></span>
+                                        <span data-anime='{ "el": "childs", "translateY": [80, 0], "opacity": [0,1], "duration": 600, "delay": 500, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                                            <a href="index.html" target="_blank" class="btn btn-large btn-gradient-emerald-blue-emerald-green btn-hover-animation-switch btn-round-edge btn-box-shadow me-20px xs-m-10px">
+                                                <span> 
+                                                    <span class="btn-text">Discover crafto</span>
+                                                    <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
+                                                    <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
+                                                </span>
+                                            </a>
+                                            <a href="index.html" target="_blank" class="btn btn-large btn-transparent-white-light border-1 btn-hover-animation btn-box-shadow btn-round-edge xs-m-10px">
+                                                <span>
+                                                    <span class="btn-text">Get started now</span>
+                                                    <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
+                                                </span> 
+                                            </a>
+                                        </span>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end slider item -->
+
+
+                    <!-- start slider item -->
+                    <div class="swiper-slide overflow-hidden">
+                    <div class="cover-background position-absolute top-0 start-0 w-100 h-100" style="background-image:url('images/poster_adverg.png');" data-swiper-parallax="1000">
+                        <div class="opacity-light bg-gradient-black-green"></div>
+                        <div class="container h-100" data-swiper-parallax="-300">
+                            <div class="row align-items-center justify-content-center h-100 text-center">
+                                <div class="col-xl-7 col-lg-9 col-md-10 position-relative text-white">
+                                    <span class="opacity-7 fs-80 xs-fs-60 alt-font fw-700 text-shadow-extra-large ls-minus-2px mb-45px sm-mb-30px xs-mb-20px d-inline-block swiper-parallax-fancy-text" data-fancy-text='{ "effect": "rotate", "string": ["GAMOXION"] }'></span>
+                                    <span data-anime='{ "el": "childs", "translateY": [0, 0], "opacity": [0,0.7], "duration": 5000, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'><span class="fw-300 fs-22 opacity-7 mb-15px d-inline-block">Brindamos soluciones en tecnologías de la información con profesionalismo, calidad y confianza, impulsando la innovación en cada proyecto.</span></span>
+                                    <span data-anime='{ "el": "childs", "translateY": [80, 0], "opacity": [0,1], "duration": 600, "delay": 500, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                                        <a href="index.html" target="_blank" class="btn btn-large btn-gradient-emerald-blue-emerald-green btn-hover-animation-switch btn-round-edge btn-box-shadow me-20px xs-m-10px">
+                                            <span> 
+                                                <span class="btn-text">Discover crafto</span>
+                                                <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
+                                                <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
+                                            </span>
+                                        </a>
+                                        <a href="index.html" target="_blank" class="btn btn-large btn-transparent-white-light border-1 btn-hover-animation btn-box-shadow btn-round-edge xs-m-10px">
+                                            <span>
+                                                <span class="btn-text">Get started now</span>
+                                                <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
+                                            </span> 
+                                        </a>
+                                    </span>
+                                </div> 
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- end slider item -->
+
+                </div>
+                <!-- start slider pagination -->
+                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
+                <!-- end slider pagination --> 
+                <!-- start slider navigation -->
+                <!--<div class="slider-one-slide-prev-1 icon-extra-large text-white swiper-button-prev slider-navigation-style-06 d-none d-sm-inline-block"><i class="line-icon-Arrow-OutLeft"></i></div>
+                    <div class="slider-one-slide-next-1 icon-extra-large text-white swiper-button-next slider-navigation-style-06 d-none d-sm-inline-block"><i class="line-icon-Arrow-OutRight"></i></div>-->
+                <!-- end slider navigation -->
+            </div>
+        </section>
+        <!-- end section -->
+
+        <!-- start section -->
+        <section id="down-section" class="background-position-center-top sm-background-image-none" style="background-image: url('images/vertical-line-bg.svg')">
+        <div class="container">
+            <div class="row align-items-center justify-content-center mb-8 xs-mb-50px">
+                <div class="col-lg-6 col-md-10 position-relative md-mb-50px sm-mb-30px" data-anime='{ "effect": "slide", "direction": "tb", "color": "#252840", "duration": 1000, "delay": 0 }'>
+                    <img class="w-85 border-radius-5px" src="https://placehold.co/600x500" alt="">
+
+                    
+                </div>
+                <div class="col-xl-4 offset-lg-1 col-lg-5 col-md-10 text-center text-lg-start" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                    <span class="alt-font text-uppercase fw-600 mb-15px d-inline-block ls-1px">Nosotros</span>
+                    <h3 class="alt-font fw-600 text-dark-gray ls-minus-1px shadow-none" data-shadow-animation="true" data-animation-delay="1500">Pasión por la tecnología e <span class="text-highlight fw-800">innovación<span class="bg-gradient-emerald-blue-emerald-green h-8px bottom-10px opacity-6 separator-animation"></span></span>.</h3>
+                    <p class="mb-35px sm-mb-25px">Somos un grupo de jovenes ingenieros informáticos apasionados por las tecnologias de información. Nos caracterizamos por un trabajo innovador, estar siempre a la vanguardia tecnológica y emplear las mejores prácticas para satisfacer las necesidades de nuestros clientes.</p> 
+                    <a href="demo-startup-services.html" class="btn btn-large btn-gradient-emerald-blue-emerald-green btn-hover-animation-switch btn-round-edge btn-box-shadow">
+                        <span> 
+                            <span class="btn-text">Conoce más</span>
+                            <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
+                            <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
+                        </span>
+                    </a>
+                </div> 
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 row-cols-sm-2 justify-content-center text-center" data-anime='{"el": "childs", "opacity": [0,1], "translateX": [50, 0], "duration": 800, "delay":300, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                <div class="col last-paragraph-no-margin sm-mb-40px">
+                    <h2 class="alt-font fw-900 text-dark-gray m-0">8M+</h2>
+                    <p>Trusted user</p>
+                </div>
+                <div class="col last-paragraph-no-margin sm-mb-40px">
+                    <h2 class="alt-font fw-900 text-dark-gray m-0">64K</h2>
+                    <p>Telephonic talk</p>
+                </div> 
+                <div class="col last-paragraph-no-margin xs-mb-40px">
+                    <h2 class="alt-font fw-900 text-dark-gray m-0">9M+</h2>
+                    <p>Project completed</p>
+                </div> 
+                <div class="col last-paragraph-no-margin">
+                    <h2 class="alt-font fw-900 text-dark-gray m-0">250</h2>
+                    <p>Award winning</p>
+                </div> 
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+
+         <!-- start section -->
+         <section class="background-position-center-top sm-background-image-none" style="background-image: url('images/vertical-line-bg.svg')">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-5 col-lg-6 last-paragraph-no-margin md-mb-30px" data-anime='{ "opacity": [0,1], "duration": 600, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        <h3 class="alt-font fw-600 ls-minus-2px text-dark-gray">We provide advanced<span class="fw-800 d-inline-block">Business solutions.</span></h3>
+                        <p class="w-90 sm-w-100 d-inline-block">This model places a strong emphasis on ideas and creativity, leveraging advanced technologies and engaging with clients on a daily basis.</p>
+                    </div>
+                    <div class="col-lg-6 offset-xl-1 progress-bar-style-01 mt-30px" data-anime='{ "el": "childs", "translateY": [50, 0], "translateX": [15, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                 
+                        <div class="progress mb-12 md-mb-60px bg-extra-medium-gray">
+                            <div class="progress-bar-title d-inline-block text-dark-gray alt-font fs-16 fw-600">Value for results</div>
+                            <div class="progress-bar bg-gradient-emerald-blue-emerald-green" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Value for results">
+                                <span class="progress-bar-percent text-center bg-dark-gray alt-font fs-11 lh-12 text-white">80%</span>
+                            </div>
+                        </div>
+                  
+                        <div class="progress mb-12 md-mb-60px bg-extra-medium-gray">
+                            <div class="progress-bar-title d-inline-block text-dark-gray alt-font fs-16 fw-600">Global experience</div>
+                            <div class="progress-bar bg-gradient-emerald-blue-emerald-green" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100" aria-label="Global experience">
+                                <span class="progress-bar-percent text-center bg-dark-gray alt-font fs-11 lh-12 text-white">87%</span>
+                            </div>
+                        </div>
+                
+                        <div class="progress bg-extra-medium-gray">
+                            <div class="progress-bar-title d-inline-block text-dark-gray alt-font fs-16 fw-600">Expert perspective</div>
+                            <div class="progress-bar bg-gradient-emerald-blue-emerald-green" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100" aria-label="Expert perspective">
+                                <span class="progress-bar-percent text-center bg-dark-gray alt-font fs-11 lh-12 text-white">93%</span>
+                            </div>
+                        </div>
+                   
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+        <!-- start section -->
+        <section class="background-position-center-top p-0 sm-background-image-none" style="background-image: url('images/vertical-line-bg.svg')">
+            <div class="container">
+                <div class="row position-relative clients-style-08">
+                    <div class="col swiper text-center feather-shadow" data-slider-options='{ "slidesPerView": 2, "spaceBetween":0, "speed": 4000, "loop": true, "pagination": { "el": ".slider-four-slide-pagination-2", "clickable": false }, "allowTouchMove": false, "autoplay": { "delay":0, "disableOnInteraction": false }, "navigation": { "nextEl": ".slider-four-slide-next-2", "prevEl": ".slider-four-slide-prev-2" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "992": { "slidesPerView": 4 }, "768": { "slidesPerView": 3 } }, "effect": "slide" }'>
+                        <div class="swiper-wrapper marquee-slide">
+                            <!-- start client item -->
+                            <div class="swiper-slide">
+                                <a><img src="images/inacaplogo.png" class="h-80px xs-h-80px" alt="" /></a>
+                            </div>
+                            <!-- end client item -->
+                            <!-- start client item -->
+                            <div class="swiper-slide">
+                                <a><img src="images/febal.png" class="h-80px xs-h-80px" alt="" /></a>
+                            </div>
+                            <!-- end client item -->
+                            <!-- start client item -->
+                            <div class="swiper-slide">
+                                <a><img src="images/logobanqalt.png" class="h-80px xs-h-80px" alt="" /></a>
+                            </div>
+                            <!-- end client item -->
+                            <!-- start client item -->
+                            <div class="swiper-slide">
+                                <a><img src="images/kinni2.png" class="h-90px xs-h-90px" alt="" /></a>
+                            </div>
+                            <!-- end client item -->
+                            <!-- start client item -->
+                            <div class="swiper-slide">
+                                <a><img src="images/goreatacama.png" class="h-80px xs-h-80px" alt="" /></a>
+                            </div>
+                            <!-- end client item -->
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+
+        <!-- start section -->
+        <!-- <section class="background-position-center-top pb-2 sm-pb-50px position-relative z-index-1 sm-background-image-none" style="background-image: url('images/vertical-line-bg.svg')">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 md-mb-50px" data-anime='{ "translateY": [0, 0], "perspective": [1200,1200], "scale": [1.1, 1], "rotateX": [50, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        <div class="d-flex flex-column box-shadow-quadruple-large border-radius-8px overflow-hidden" data-bottom-top="transform: translateY(50px)" data-top-bottom="transform: translateY(-50px)">
+                            <div class="row row-cols-1 row-cols-sm-2 justify-content-center m-0">
+                                <div class="col p-10 lg-p-8 text-center border-bottom border-end xs-border-end-0 border-color-extra-medium-gray bg-white text-center last-paragraph-no-margin">
+                                    <h2 class="fw-500 ls-minus-1px text-dark-gray m-0">8M+</h2>
+                                    <p>Trusted user</p>
+                                </div>
+                                <div class="col p-10 lg-p-8 text-center border-bottom border-color-extra-medium-gray bg-white text-center last-paragraph-no-margin">
+                                    <h2 class="fw-500 ls-minus-1px text-dark-gray m-0">64K</h2>
+                                    <p>Telephonic talk</p>
+                                </div>
+                                <div class="col p-10 lg-p-8 text-center border-end xs-border-end-0 xs-border-bottom border-color-extra-medium-gray bg-white text-center last-paragraph-no-margin">
+                                    <h2 class="fw-500 ls-minus-1px text-dark-gray m-0">800</h2>
+                                    <p>Project completed</p>
+                                </div>
+                                <div class="col p-10 lg-p-8 text-center bg-white text-center last-paragraph-no-margin">
+                                    <h2 class="fw-500 ls-minus-1px text-dark-gray m-0">98%</h2>
+                                    <p>Positive feedback</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 offset-xl-1 col-lg-6 text-center text-lg-start" data-anime='{ "el": "childs", "opacity": [0,1], "duration": 600, "delay":200, "staggervalue": 200, "easing": "easeOutQuad" }'>
+                        <div class="row justify-content-center justify-content-lg-start">
+                            <div>
+                                <h3 class="alt-font fw-600 text-dark-gray ls-minus-1px shadow-none" data-shadow-animation="true" data-animation-delay="700">Grow business with crafto <span class="text-highlight fw-800">startup!<span class="bg-gradient-emerald-blue-emerald-green h-8px bottom-10px opacity-6 separator-animation"></span></span></h3>
+                            </div>
+                            <div class="col-sm-6 last-paragraph-no-margin xs-mb-20px">
+                                <span class="alt-font fw-700 fs-18 text-dark-gray mb-5px d-inline-block">20 years experience</span>
+                                <p class="w-90 xl-w-100 md-w-95 mx-auto mx-lg-0">We value our employees and stakeholders for new ideas or opinions.</p>
+                            </div>
+                            <div class="col-sm-6 last-paragraph-no-margin">
+                                <span class="alt-font fw-700 fs-18 text-dark-gray mb-5px d-inline-block">Business solutions</span>
+                                <p class="w-90 xl-w-100 md-w-95 mx-auto mx-lg-0">We are driving modern technology based digital solutions.</p>
+                            </div>
+                            <div class="col-md-11">
+                                <div class="pt-15px pb-15px ps-30px pe-30px xs-p-15px bg-white border border-color-extra-medium-gray border-radius-6px mt-35px icon-with-text-style-08 text-center text-lg-start">
+                                    <div class="feature-box feature-box-left-icon-middle d-inline-flex align-middle">
+                                        <div class="feature-box-icon me-10px">
+                                            <i class="bi bi-briefcase icon-very-medium text-gradient-emerald-blue-emerald-green align-middle"></i>
+                                        </div>
+                                        <div class="feature-box-content">
+                                            <span class="fs-18 fw-500 text-dark-gray d-block">Business transformation agency.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section> -->
+        <!-- end section -->  
+
+     
+
+        <!-- start section -->
+        <section class="pt-0 background-position-center-top sm-background-image-none" style="background-image: url('images/vertical-line-bg.svg')">
+            <div class="container-fluid d-none d-md-block">
+                <div class="row">
+                    <div class="p-0 overlap-section" data-bottom-top="transform: translateY(-50px)" data-top-bottom="transform: translateY(50px)">
+                        <img src="images/demo-startup-bg-01.png" alt="">
+                    </div>
+                </div> 
+            </div>
+            <div class="container">  
+                <div class="row justify-content-center mb-3">
+                    <div class="col-lg-7 text-center" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        <span class="alt-font text-uppercase fw-600 d-inline-block ls-1px">Que ofrecemos</span>
+                        <h3 class="alt-font text-dark-gray fw-600 ls-minus-1px shadow-none" data-shadow-animation="true" data-animation-delay="1000">Conoce nuestros <span class="text-highlight fw-800">servicios<span class="bg-gradient-emerald-blue-emerald-green h-8px bottom-10px opacity-6 separator-animation"></span></span></h3>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-lg-3 row-cols-sm-2 justify-content-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 100, "staggervalue": 200, "easing": "easeOutQuad" }'>
+                    <!-- start fancy text box item -->
+                    <div class="col md-mb-30px">
+                        <div class="border-radius-8px overflow-hidden box-shadow-quadruple-large services-box-style-03 last-paragraph-no-margin">
+                            <div class="mt-5 position-relative box-image center-block">
+                                <div class="feature-box">
+                                    <div class="feature-box-icon">
+                                        <i class="line-icon-Gamepad icon-extra-double-large text-gradient-emerald-blue-emerald-green"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white">
+                                <div class="ps-65px pe-65px xl-ps-50px xl-pe-50px lg-ps-30px lg-pe-30px pt-30px pb-30px text-center">
+                                    <a href="demo-startup-services-details.html" class="d-inline-block fs-18 alt-font fw-700 text-dark-gray mb-5px">Advergaming</a>
+                                    <p>Potenciamos su negocio con videojuegos publicitarios a medida, creando experiencias innovadoras que conectan su marca con los consumidores. Garantizamos calidad de nivel profesional, alineada con las tendencias del mercado.</p> 
+                                </div> 
+                                <div class="d-flex justify-content-center border-top border-color-extra-medium-gray pt-20px pb-20px ps-50px pe-50px position-relative text-center">
+                                    <a href="demo-startup-services-details.html" class="btn btn-link btn-hover-animation-switch btn-very-small fw-700 text-dark-gray text-uppercase">
+                                        <span>
+                                            <span class="btn-text">Más detalles</span>
+                                            <span class="btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
+                                            <span class="btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
+                                        </span> 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end fancy text box item -->  
+                    <!-- start fancy text box item -->
+                    <div class="col md-mb-30px">
+                        <div class="border-radius-8px overflow-hidden box-shadow-quadruple-large services-box-style-03 last-paragraph-no-margin">
+                            <div class="mt-5 position-relative box-image">
+                                <div class="feature-box">
+                                    <div class="feature-box-icon">
+                                        <i class="line-icon-Smartphone-3 icon-extra-double-large text-gradient-emerald-blue-emerald-green"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white">
+                                <div class="mb-17 ps-65px pe-65px xl-ps-50px xl-pe-50px lg-ps-30px lg-pe-30px pt-30px pb-30px text-center">
+                                    <a href="demo-startup-services-details.html" class="d-inline-block fs-18 alt-font fw-700 text-dark-gray mb-5px">Apps Móviles</a>
+                                    <p>Desarrollamos aplicaciones móviles de alto rendimiento que ayudan a mejorar la productivad de su negocio y ofrecer una experiencia de usuario de calidad.</p> 
+                                </div> 
+                                <div class="d-flex justify-content-center border-top border-color-extra-medium-gray pt-20px pb-20px ps-50px pe-50px position-relative text-center">
+                                    <a href="demo-startup-services-details.html" class="btn btn-link btn-hover-animation-switch btn-very-small fw-700 text-dark-gray text-uppercase">
+                                        <span>
+                                            <span class="btn-text">Más detalles</span>
+                                            <span class="btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
+                                            <span class="btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
+                                        </span> 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end fancy text box item -->
+                    <!-- start fancy text box item -->
+                    <div class="col md-mb-30px">
+                        <div class="border-radius-8px overflow-hidden box-shadow-quadruple-large services-box-style-03 last-paragraph-no-margin">
+                            <div class="mt-5 position-relative box-image">
+                                <div class="feature-box">
+                                    <div class="feature-box-icon">
+                                        <i class="line-icon-Monitor-phone icon-extra-double-large text-gradient-emerald-blue-emerald-green"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white">
+                                <div class="mb-9 ps-65px pe-65px xl-ps-50px xl-pe-50px lg-ps-30px lg-pe-30px pt-30px pb-30px text-center">
+                                    <a href="demo-startup-services-details.html" class="d-inline-block fs-18 alt-font fw-700 text-dark-gray mb-5px">Desarrollo Web</a>
+                                    <p>Creamos sitios web a medida, optimizados para su negocio. Automatizamos procesos y le proporcionamos una plataforma administrable, facilitando la gestión y el crecimiento de su empresa.</p> 
+                                </div> 
+                                <div class="d-flex justify-content-center border-top border-color-extra-medium-gray pt-20px pb-20px ps-50px pe-50px position-relative text-center">
+                                    <a href="demo-startup-services-details.html" class="btn btn-link btn-hover-animation-switch btn-very-small fw-700 text-dark-gray text-uppercase">
+                                        <span>
+                                            <span class="btn-text">Más detalles</span>
+                                            <span class="btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
+                                            <span class="btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
+                                        </span> 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end fancy text box item -->
+                    <!-- start fancy text box item -->
+                    <div class="col mt-5">
+                        <div class="border-radius-8px overflow-hidden box-shadow-quadruple-large services-box-style-03 last-paragraph-no-margin">
+                            <div class="mt-5 position-relative box-image">
+                                <div class="feature-box">
+                                    <div class="feature-box-icon">
+                                        <i class="line-icon-Window-2 icon-extra-double-large text-gradient-emerald-blue-emerald-green"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white">
+                                <div class="mb-1 ps-65px pe-65px xl-ps-50px xl-pe-50px lg-ps-30px lg-pe-30px pt-30px pb-30px text-center">
+                                    <a href="demo-startup-services-details.html" class="d-inline-block fs-18 alt-font fw-700 text-dark-gray mb-5px">Apps de Escritorio</a>
+                                    <p>Desarrollamos aplicaciones de escritorio a medida, que ayudan a gestionar sus tareas bajo una experiencia de usuario innovadora e intuitiva.</p> 
+                                </div> 
+                                <div class="d-flex justify-content-center border-top border-color-extra-medium-gray pt-20px pb-20px ps-50px pe-50px position-relative text-center">
+                                    <a href="demo-startup-services-details.html" class="btn btn-link btn-hover-animation-switch btn-very-small fw-700 text-dark-gray text-uppercase">
+                                        <span>
+                                            <span class="btn-text">Más detalles</span>
+                                            <span class="btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
+                                            <span class="btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
+                                        </span> 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end fancy text box item -->
+                           <!-- start fancy text box item -->
+                    <div class="col mt-5">
+                        <div class="border-radius-8px overflow-hidden box-shadow-quadruple-large services-box-style-03 last-paragraph-no-margin">
+                            <div class="mt-5 position-relative box-image">
+                                <div class="feature-box">
+                                    <div class="feature-box-icon">
+                                        <i class="line-icon-Code-Window icon-extra-double-large text-gradient-emerald-blue-emerald-green"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white">
+                                <div class="mb-10 ps-65px pe-65px xl-ps-50px xl-pe-50px lg-ps-30px lg-pe-30px pt-30px pb-30px text-center">
+                                    <a href="demo-startup-services-details.html" class="d-inline-block fs-18 alt-font fw-700 text-dark-gray mb-5px">Soluciones TI</a>
+                                    <p>Analizamos sus problemas y brindamos una solucion implementando las tecnologías de información.</p> 
+                                </div> 
+                                <div class="d-flex justify-content-center border-top border-color-extra-medium-gray pt-20px pb-20px ps-50px pe-50px position-relative text-center">
+                                    <a href="demo-startup-services-details.html" class="btn btn-link btn-hover-animation-switch btn-very-small fw-700 text-dark-gray text-uppercase">
+                                        <span>
+                                            <span class="btn-text">Más detalles</span>
+                                            <span class="btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
+                                            <span class="btn-icon"><i class="fa-solid fa-arrow-right"></i></span>
+                                        </span> 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end fancy text box item -->
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+
+        <!-- start section -->
+        <section class="bg-very-light-gray">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-6 text-center md-mb-50px"> 
+                        <figure class="position-relative m-0">
+                            <div class="position-relative d-inline-block"  data-anime='{ "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                                <img class="w-90 border-radius-5px animation-float" src="https://placehold.co/600x750" alt="" />
+                            </div>
+                            <figcaption class="position-absolute bg-white box-shadow-quadruple-large border-radius-5px bottom-50px xs-bottom-35px left-minus-30px md-left-minus-0px ps-50px pe-50px pt-35px pb-35px xs-p-20px w-320px xs-w-250px text-center last-paragraph-no-margin" data-anime='{ "translateY": [50, 0], "scale": [0.8,1], "opacity": [0,1], "duration": 800, "delay": 300, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                                <div class="icon-with-text-style-06">
+                                    <div class="bg-white feature-box feature-box-left-icon-middle">
+                                        <div class="feature-box-icon me-15px">
+                                            <i class="line-icon-Thumb icon-double-large text-gradient-emerald-blue-emerald-green"></i>
+                                        </div> 
+                                        <div class="feature-box-content last-paragraph-no-margin">
+                                            <div class="alt-font fw-600 text-dark-gray lh-26">We provide quality services to customers.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-xl-5 offset-xl-1 col-lg-6 col-md-8">
+                        <h3 class="fw-600 mb-60px md-mb-40px mt-20px text-dark-gray alt-font ls-minus-2px" data-anime='{ "translateY": [50, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>Understand and apply the <span class="fw-800">business process.</span></h3>
+                        <div class="row row-cols-1" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 800, "delay": 100, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                            <!-- start process step item -->
+                            <div class="col-12 process-step-style-05 position-relative hover-box">
+                                <div class="process-step-item d-flex">
+                                    <div class="process-step-icon-wrap position-relative">
+                                        <div class="process-step-icon d-flex justify-content-center align-items-center mx-auto rounded-circle h-60px w-60px fs-16 bg-gradient-emerald-blue-emerald-green fw-400 position-relative will-change-transform">
+                                            <span class="number position-relative z-index-1 text-white">01</span>
+                                            <div class="box-overlay bg-gradient-emerald-blue-emerald-green rounded-circle"></div>
+                                        </div> 
+                                        <span class="progress-step-separator bg-extra-medium-gray"></span>
+                                    </div>
+                                    <div class="process-content ps-35px last-paragraph-no-margin mb-30px">
+                                        <span class="d-block fw-700 text-dark-gray mb-5px fs-18 alt-font">Research and strategy</span>
+                                        <p class="w-80 lg-w-90 sm-w-100">We spend enough time to uncover business goals and client needs.</p>
+                                    </div>
+                                </div> 
+                            </div>
+                            <!-- end process step item --> 
+                            <!-- start process step item -->
+                            <div class="col-12 process-step-style-05 position-relative hover-box">
+                                <div class="process-step-item d-flex">
+                                    <div class="process-step-icon-wrap position-relative">
+                                        <div class="process-step-icon d-flex justify-content-center align-items-center mx-auto rounded-circle h-60px w-60px fs-16 bg-gradient-emerald-blue-emerald-green fw-400 position-relative will-change-transform">
+                                            <span class="number position-relative z-index-1 text-white">02</span>
+                                            <div class="box-overlay bg-gradient-emerald-blue-emerald-green rounded-circle"></div>
+                                        </div> 
+                                        <span class="progress-step-separator bg-extra-medium-gray"></span>
+                                    </div>
+                                    <div class="process-content ps-35px last-paragraph-no-margin mb-30px">
+                                        <span class="d-block fw-700 text-dark-gray mb-5px fs-18 alt-font">Development and scale</span>
+                                        <p class="w-80 lg-w-90 sm-w-100">We utilize our best talents to design digital products and services.</p>
+                                    </div>
+                                </div> 
+                            </div>
+                            <!-- end process step item --> 
+                            <!-- start process step item -->
+                            <div class="col-12 process-step-style-05 position-relative hover-box">
+                                <div class="process-step-item d-flex">
+                                    <div class="process-step-icon-wrap position-relative">
+                                        <div class="process-step-icon d-flex justify-content-center align-items-center mx-auto rounded-circle h-60px w-60px fs-16 bg-gradient-emerald-blue-emerald-green fw-400 position-relative will-change-transform">
+                                            <span class="number position-relative z-index-1 text-white">03</span>
+                                            <div class="box-overlay bg-gradient-emerald-blue-emerald-green rounded-circle"></div>
+                                        </div>  
+                                    </div>
+                                    <div class="process-content ps-35px last-paragraph-no-margin">
+                                        <span class="d-block fw-700 text-dark-gray mb-5px fs-18 alt-font">Testing and evaluation</span>
+                                        <p class="w-80 lg-w-90 sm-w-100">Before the launch, our team test complete website thoroughly.</p>
+                                    </div>
+                                </div> 
+                            </div>
+                            <!-- end process step item --> 
+                        </div>  
+                    </div> 
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+
+   
+        <!-- start section -->
+        <section class="background-position-center-top position-relative overflow-hidden sm-background-image-none" style="background-image: url('images/vertical-line-bg.svg')">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-xl-5 col-lg-6 col-md-10 md-mb-50px">
+                        <div class="row row-cols-1 row-cols-lg-1"> 
+                            <!-- start testimonial item -->
+                            <div class="col mb-35px ms-35px lg-ms-0" data-anime='{ "translateX": [25, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 500, "easing": "easeOutQuad" }'>
+                                <div class="d-flex flex-column flex-sm-row align-items-center testimonials testimonials-style-07 border-radius-6px ps-45px pe-45px pt-35px pb-35px lg-p-30px bg-white box-shadow-quadruple-large text-center text-sm-start last-paragraph-no-margin" data-bottom-top="transform: translate3d(80px, 0px, 0px);" data-top-bottom="transform: translate3d(-80px, 0px, 0px);">
+                                    <div class="testimonials-author w-120px me-25px xs-me-0 xs-mb-20px flex-shrink-0">
+                                        <img class="rounded-circle me-15px xs-me-0" src="https://placehold.co/148x148" alt="">
+                                    </div>
+                                    <div class="testimonials-content">
+                                        <p>Lorem ipsum dolor incididunt amet an labore dolore nostrud.</p>
+                                        <span class="fs-18 alt-font text-dark-gray fw-700 d-block mt-5px">Herman miller, ThemeZaa</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end testimonial item --> 
+                            <!-- start testimonial item -->
+                            <div class="col" data-anime='{ "translateX": [-25, 0], "opacity": [0,1], "duration": 800, "delay": 300, "staggervalue": 500, "easing": "easeOutQuad" }'>
+                                <div class="d-flex flex-column flex-sm-row align-items-center testimonials testimonials-style-07 border-radius-6px ps-45px pe-45px pt-35px pb-35px lg-p-30px bg-white box-shadow-quadruple-large text-center text-sm-start last-paragraph-no-margin" data-bottom-top="transform: translate3d(-80px, 0px, 0px);" data-top-bottom="transform: translate3d(80px, 0px, 0px);">
+                                    <div class="testimonials-author w-120px me-25px xs-me-0 xs-mb-20px flex-shrink-0">
+                                        <img class="rounded-circle me-15px xs-me-0" src="https://placehold.co/148x148" alt="">
+                                    </div>
+                                    <div class="testimonials-content">
+                                        <p>Lorem ipsum dolor incididunt amet an labore dolore nostrud.</p>
+                                        <span class="fs-18 alt-font text-dark-gray fw-700 d-block mt-5px">Matthew taylor, ThemeZaa</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end testimonial item --> 
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-6 offset-xl-1 col-md-10 text-center text-lg-start" data-anime='{ "el": "childs", "opacity": [0,1], "duration": 600, "delay": 200, "staggervalue": 200, "easing": "easeOutQuad" }'>
+                        <h3 class="alt-font fw-600 ls-minus-2px text-dark-gray">Customer testimonial is simply an <span class="fw-800"> existing user.</span></h3>
+                        <p class="d-inline-block">Over 12 years of experience we have been constantly providing excellent web design & development services which is best in-class experience for our clients.</p>
+                        <a href="demo-startup-contact.html" class="btn btn-medium btn-gradient-emerald-blue-emerald-green btn-hover-animation-switch btn-round-edge btn-box-shadow mt-10px">
+                            <span> 
+                                <span class="btn-text">Get started</span>
+                                <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
+                                <span class="btn-icon"><i class="feather icon-feather-arrow-right"></i></span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-center mt-7 sm-mt-12">
+                    <div class="col-lg-12 col-md-10 text-center" data-anime='{ "translateY": [30, 0], "opacity": [0,1], "delay": 600, "staggervalue": 250, "easing": "easeOutQuad" }'>
+                        <h4 class="alt-font text-dark-gray d-block fw-600 ls-minus-1px shadow-none mb-0" data-shadow-animation="true" data-animation-delay="600">Join the <span class="text-highlight fw-800 ls-minus-3px">10000+<span class="bg-gradient-emerald-blue-emerald-green h-8px bottom-10px opacity-6 separator-animation"></span></span> reputed companies trusting us.</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+        <!-- start section -->
+        <section class="background-position-center-top position-relative overflow-hidden py-0 sm-background-image-none" style="background-image: url('images/vertical-line-bg.svg')">
+            <div class="skrollr-parallax mx-auto" data-bottom-top="width: 70%" data-center-top="width: 100%;" data-parallax-background-ratio="0.5" style="background-image: url('https://placehold.co/1920x1100')">
+                <div class="opacity-extra-medium bg-dark-gray"></div>
+                <div class="container">
+                    <div class="row justify-content-center align-items-center one-third-screen">
+                        <div class="col-xl-6 col-lg-8 text-center position-relative last-paragraph-no-margin parallax-scrolling-style-2">
+                            <a href="https://www.youtube.com/watch?v=cfXHhfNy7tU" aria-label="popup-video" class="position-relative d-inline-block text-center bg-gradient-emerald-blue-emerald-green rounded-circle video-icon-box video-icon-large popup-youtube mb-9 md-mb-6">
+                                <span>
+                                    <span class="video-icon">
+                                        <i class="fa-solid fa-play text-white"></i>
+                                        <span class="video-icon-sonar">
+                                            <span class="video-icon-sonar-bfr bg-gradient-emerald-blue-emerald-green opacity-9"></span>
+                                        </span>
+                                    </span>
+                                </span>
+                            </a>
+                            <span class="d-block fs-22 fw-300 text-white opacity-8 mb-10px">Work to ensure that your business prospers</span>
+                            <h1 class="alt-font text-white fw-700 mb-20px ls-minus-2px text-shadow-extra-large">Reporting and business analysis</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section --> 
+        <!-- start section -->
+        <section class="background-position-center-top position-relative sm-background-image-none" style="background-image: url('images/vertical-line-bg.svg')">
+            <div class="container">
+                <div class="row justify-content-center mb-1">
+                    <div class="col-lg-7 text-center" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        <span class="alt-font text-uppercase fw-600 d-inline-block ls-1px">Stay new updated</span>
+                        <h3 class="alt-font text-dark-gray fw-600 ls-minus-1px shadow-none" data-shadow-animation="true" data-animation-delay="1000">Explore the <span class="text-highlight fw-800">news<span class="bg-gradient-emerald-blue-emerald-green h-8px bottom-10px opacity-6 separator-animation"></span></span></h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 px-0">
+                        <ul class="blog-grid blog-wrapper grid-loading grid grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-double-extra-large" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 1000, "willchange": "transform", "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                            <li class="grid-sizer"></li>
+                            <!-- start blog item -->
+                            <li class="grid-item">
+                                <div class="card border-0 border-radius-5px box-shadow-quadruple-large box-shadow-quadruple-large-hover">
+                                    <div class="blog-image">
+                                        <a href="demo-startup-blog-single-simple.html" class="d-block"><img src="https://placehold.co/600x430" alt="" /></a>
+                                        <div class="blog-categories">
+                                            <a href="demo-startup-blog.html" class="categories-btn bg-white text-dark-gray text-dark-gray-hover text-uppercase alt-font fw-700">Agency</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-13 md-p-11">
+                                        <a href="demo-startup-blog-single-simple.html" class="card-title mb-15px alt-font fw-700 fs-18 lh-30 text-dark-gray text-dark-gray-hover d-inline-block">Build up healthy habits and strong peaceful life</a>
+                                        <p>Lorem ipsum dolor consectetur adipiscing eiusmod tempor</p>
+                                        <div class="author d-flex justify-content-center align-items-center position-relative overflow-hidden fs-14 text-uppercase">
+                                            <div class="me-auto">
+                                                <span class="blog-date d-inline-block">30 August 2021</span>
+                                                <div class="d-inline-block author-name">By <a href="demo-startup-blog.html" class="text-dark-gray text-dark-gray-hover text-decoration-line-bottom fw-500">Den viliamson</a></div>
+                                            </div>
+                                            <div class="like-count">
+                                                <a href="demo-startup-blog-single-simple.html"><i class="fa-regular fa-heart text-base-color"></i><span class="text-dark-gray align-middle fw-500">25</span></a>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- end blog item -->
+                            <!-- start blog item -->
+                            <li class="grid-item">
+                                <div class="card border-0 border-radius-5px box-shadow-quadruple-large box-shadow-quadruple-large-hover">
+                                    <div class="blog-image">
+                                        <a href="demo-startup-blog-single-simple.html" class="d-block"><img src="https://placehold.co/600x430" alt="" /></a>
+                                        <div class="blog-categories">
+                                            <a href="demo-startup-blog.html" class="categories-btn bg-white text-dark-gray text-dark-gray-hover text-uppercase alt-font fw-700">Luxurious</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-13 md-p-11">
+                                        <a href="demo-startup-blog-single-simple.html" class="card-title mb-15px alt-font fw-700 fs-18 lh-30 text-dark-gray text-dark-gray-hover d-inline-block">How to bring the season into your great marketing</a>
+                                        <p>Lorem ipsum dolor consectetur adipiscing eiusmod tempor</p>
+                                        <div class="author d-flex justify-content-center align-items-center position-relative overflow-hidden fs-14 text-uppercase">
+                                            <div class="me-auto">
+                                                <span class="blog-date d-inline-block">28 August 2021</span>
+                                                <div class="d-inline-block author-name">By <a href="demo-startup-blog.html" class="text-dark-gray text-dark-gray-hover text-decoration-line-bottom fw-500">Hugh macleod</a></div>
+                                            </div>
+                                            <div class="like-count">
+                                                <a href="demo-startup-blog-single-simple.html"><i class="fa-regular fa-heart text-base-color"></i><span class="text-dark-gray align-middle fw-500">58</span></a>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- end blog item -->
+                            <!-- start blog item -->
+                            <li class="grid-item">
+                                <div class="card border-0 border-radius-5px box-shadow-quadruple-large box-shadow-quadruple-large-hover">
+                                    <div class="blog-image">
+                                        <a href="demo-startup-blog-single-simple.html" class="d-block"><img src="https://placehold.co/600x430" alt="" /></a>
+                                        <div class="blog-categories">
+                                            <a href="demo-startup-blog.html" class="categories-btn bg-white text-dark-gray text-dark-gray-hover text-uppercase alt-font fw-700">Business</a>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-13 md-p-11">
+                                        <a href="demo-startup-blog-single-simple.html" class="card-title mb-15px alt-font fw-700 fs-18 lh-30 text-dark-gray text-dark-gray-hover d-inline-block">Be the strong willed one the public relationship</a>
+                                        <p>Lorem ipsum dolor consectetur adipiscing eiusmod tempor</p>
+                                        <div class="author d-flex justify-content-center align-items-center position-relative overflow-hidden fs-14 text-uppercase">
+                                            <div class="me-auto">
+                                                <span class="blog-date d-inline-block">26 August 2021</span>
+                                                <div class="d-inline-block author-name">By <a href="demo-startup-blog.html" class="text-dark-gray text-dark-gray-hover text-decoration-line-bottom fw-500">Walton smith</a></div>
+                                            </div>
+                                            <div class="like-count">
+                                                <a href="demo-startup-blog-single-simple.html"><i class="fa-regular fa-heart text-base-color"></i><span class="text-dark-gray align-middle fw-500">75</span></a>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- end blog item --> 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+
+        <!-- start footer -->
+        <footer class="footer-dark bg-slate-blue p-0">
+            <div class="d-none d-md-flex">  
+                <div class="overlap-section-one-fourth animation-float">
+                    <img src="images/demo-startup-bg-01.png" alt="">
+                </div> 
+            </div>
+            <div class="container">
+                <div class="row justify-content-center pt-4 lg-pt-2 sm-pt-45px">
+                    <!-- start footer column -->
+                    <div class="col-6 col-xl-3 col-lg-12 col-sm-6 last-paragraph-no-margin text-xl-start text-lg-center order-sm-1 lg-mb-50px sm-mb-35px">
+                        <a href="index.html" class="footer-logo mb-20px md-mb-10px d-inline-block" aria-label="logo"><img src="images/demo-startup-logo-white.png" data-at2x="images/demo-startup-logo-white@2x.png" alt=""></a>
+                        <p class="w-90 lg-w-40 md-w-100 mx-lg-auto mx-xl-0">Lorem ipsum amet adipiscing elit to eiusmod ad tempor incididunt enim.</p>
+                        <div class="elements-social social-icon-style-02 mt-20px">
+                            <ul class="small-icon light">
+                                <li class="my-0"><a class="facebook" href="https://www.facebook.com/" target="_blank" aria-label="facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li class="my-0"><a class="dribbble" href="http://www.dribbble.com" target="_blank" aria-label="dribbble"><i class="fa-brands fa-dribbble"></i></a></li> 
+                                <li class="my-0"><a class="twitter" href="http://www.twitter.com" target="_blank" aria-label="twitter"><i class="fa-brands fa-twitter"></i></a></li> 
+                                <li class="my-0"><a class="instagram" href="http://www.instagram.com" target="_blank" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a></li> 
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end footer column -->
+                    <!-- start footer column -->
+                    <div class="col-6 col-xl-2 col-lg-3 col-sm-4 xs-mb-35px order-sm-3 order-lg-2">
+                        <span class="alt-font fw-500 d-block text-white mb-10px">Company</span>
+                        <ul>
+                            <li><a href="demo-startup-who-we-are.html">Who we are</a></li>
+                            <li><a href="demo-startup-services.html">Our services</a><div class="bg-white-transparent-very-light fw-500 text-white lh-22 text-uppercase border-radius-30px ps-10px pe-10px fs-10 ms-10px d-inline-block align-middle">Hot</div></li>
+                            <li><a href="demo-startup-clients.html">Our clients</a></li>
+                            <li><a href="demo-startup-contact.html">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <!-- end footer column -->
+                    <!-- start footer column -->
+                    <div class="col-6 col-xl-2 col-lg-3 col-md-5 col-sm-4 xs-mb-35px order-sm-4 order-lg-3">
+                        <span class="alt-font fw-500 d-block text-white mb-10px">Our services</span>
+                        <ul>
+                            <li><a href="demo-startup-services-details.html">Research planning</a></li>
+                            <li><a href="demo-startup-services-details.html">Business promotion</a></li>
+                            <li><a href="demo-startup-services-details.html">Marketing strategy</a></li>
+                            <li><a href="demo-startup-services-details.html">Business campaign</a></li>
+                        </ul>
+                    </div>
+                    <!-- end footer column -->
+                    <!-- start footer column -->
+                    <div class="col-6 col-xl-2 col-lg-3 col-md-3 col-sm-4 xs-mb-35px order-sm-5 order-lg-4">
+                        <span class="alt-font fw-500 d-block text-white mb-10px">Need help?</span>
+                        <span>Call us directly?</span>
+                        <span class="d-block mb-15px"><a class="text-white" href="tel:1235678901">(123) 567 8901</a></span>
+                        <span>Need support?</span>
+                        <a href="mailto:help@domain.com" class="text-white text-decoration-line-bottom">help@domain.com</a>
+                    </div>
+                    <!-- end footer column -->
+                    <!-- start footer column -->
+                    <div class="col-xl-3 col-lg-3 col-sm-6 md-mb-50px sm-mb-35px xs-mb-0 order-sm-2 order-lg-5">
+                        <span class="alt-font fw-500 d-block text-white mb-10px">Subscribe our newsletter</span>
+                        <p class="mb-20px xs-mb-10px">Subscribe our newsletter to get the latest news.</p>
+                        <div class="d-inline-block w-100 newsletter-style-02 position-relative">
+                            <form action="email-templates/subscribe-newsletter.php" method="post" class="position-relative w-100">
+                                <input class="input-small bg-white-transparent-extra-light border-color-transparent form-control pe-50px ps-20px lg-ps-15px required" type="email" name="email" placeholder="Enter your email" />
+                                <input type="hidden" name="redirect" value="">
+                                <button class="btn pe-20px submit" aria-label="submit"><i class="icon bi bi-envelope icon-small text-white"></i></button>
+                                <div class="form-results border-radius-4px pt-5px pb-5px ps-15px pe-15px fs-14 lh-22 mt-10px w-100 text-center position-absolute d-none"></div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- end footer column -->                      
+                </div>
+                <div class="row justify-content-center align-items-center pt-5 sm-pt-35px">
+                    <!-- start divider -->
+                    <div class="col-12">
+                        <div class="divider-style-03 divider-style-03-01 border-color-transparent-white-light"></div>
+                    </div>
+                    <!-- end divider -->
+                    <!-- start copyright -->
+                    <div class="col-lg-5 pt-25px pb-25px md-pt-0 fs-16 order-2 order-lg-1 text-center text-lg-start last-paragraph-no-margin"><p>&copy; 2024 Crafto is Proudly Powered by <a href="https://www.themezaa.com/" target="_blank" class="text-white text-decoration-line-bottom">ThemeZaa</a></p></div>
+                    <!-- end copyright -->
+                    <!-- start footer menu -->
+                    <div class="col-lg-7 pt-25px pb-25px md-pb-5px fs-16 order-1 order-lg-2 text-center text-lg-end">
+                        <ul class="footer-navbar sm-lh-normal"> 
+                            <li><a href="#" class="nav-link">Privacy policy</a></li>
+                            <li><a href="#" class="nav-link">Terms and conditions</a></li>
+                            <li><a href="#" class="nav-link">Copyright</a></li>
+                        </ul>
+                    </div>
+                    <!-- end footer menu -->
+                </div>
+            </div> 
         </footer>
-    </div>
-    <script>
-      const añoActual = new Date().getFullYear();
-      
-      document.getElementById('fecha-actual').textContent = añoActual;
-  </script>
-    <script src='js/basescript.js'></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="js/aos_settings.js"></script>
-    <script src='js/jquery.superslides.js'></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/matinput.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-</body>
+        <!-- end footer -->
+        <!-- start scroll progress -->
+        <div class="scroll-progress d-none d-xxl-block">
+          <a href="#" class="scroll-top" aria-label="scroll">
+            <span class="scroll-text">Scroll</span><span class="scroll-line"><span class="scroll-point"></span></span>
+          </a>
+        </div>
+        <!-- end scroll progress -->
+        <!-- javascript libraries -->
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/vendors.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
 </html>
+
