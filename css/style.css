@@ -7124,6 +7124,7 @@ header.sticky .navbar.disable-fixed {
 }
 .navbar .navbar-nav .nav-item:hover .nav-link, .navbar .navbar-nav .nav-item.active .nav-link {
   opacity: 0.6;
+  font-weight:bold;
 }
 .navbar .navbar-nav .nav-item .nav-link.active {
   opacity: 0.6;
