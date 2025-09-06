@@ -89,7 +89,9 @@ Table of contents
 }
 html {
   font-size: 16px;
+  scroll-behavior: smooth !important;
 }
+
 body {
   font-family: var(--primary-font);
   font-size: 16px;
@@ -19333,4 +19335,9 @@ footer .footer-navbar .nav-item:last-child a {
   display: flex;
   justify-content: center;    
   align-items: center;       
+}
+
+.content-box-contact{
+  min-height: 300px !important;
+  height: 100px;
 }
