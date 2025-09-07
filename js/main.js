@@ -2101,51 +2101,51 @@
         }
 
         // Google reCaptcha verify
-        if ( typeof ( grecaptcha ) !== 'undefined' && grecaptcha !== null ) {
-            if (formObj.find('.g-recaptcha').length) {
-                var gResponse = grecaptcha.getResponse();
-                if (!(gResponse.length)) {
-                    error = true;
-                    formObj.find('.g-recaptcha').addClass('is-invalid');
-                }
-            } else if( grecaptchav3 != '' && grecaptchav3 != undefined ) { // For Version 3
-                grecaptcha.ready(function() {
-                  grecaptcha.execute(grecaptchav3, {action: 'submit'}).then(function(token) {
-                  });
-                });
-            }
-        }
+        // if ( typeof ( grecaptcha ) !== 'undefined' && grecaptcha !== null ) {
+        //     if (formObj.find('.g-recaptcha').length) {
+        //         var gResponse = grecaptcha.getResponse();
+        //         if (!(gResponse.length)) {
+        //             error = true;
+        //             formObj.find('.g-recaptcha').addClass('is-invalid');
+        //         }
+        //     } else if( grecaptchav3 != '' && grecaptchav3 != undefined ) { // For Version 3
+        //         grecaptcha.ready(function() {
+        //           grecaptcha.execute(grecaptchav3, {action: 'submit'}).then(function(token) {
+        //           });
+        //         });
+        //     }
+        // }
 
-        if (!error && actionURL != '' && actionURL != undefined) {
-            _this.addClass('loading');
-            $.ajax({
-                type: 'POST',
-                url: actionURL,
-                data: formObj.serialize(),
-                success: function (result) {
-                    _this.removeClass('loading');
-                    if (redirectVal != '' && redirectVal != undefined) {
-                        window.location.href = redirectVal;
-                    } else {
-                        if (typeof (result) !== 'undefined' && result !== null) {
-                            result = $.parseJSON(result);
-                        }
-                        formObj.find('input[type=text],input[type=url],input[type=email],input[type=tel],input[type=password],textarea').each(function () {
-                            $(this).val('');
-                            $(this).removeClass('is-invalid');
-                        });
-                        formObj.find('.g-recaptcha').removeClass('is-invalid');
-                        formObj.find('input[type=checkbox],input[type=radio]').prop('checked', false);
-                        if (formObj.find('.g-recaptcha').length) {
-                            grecaptcha.reset();
-                        }
-                        resultsObj.removeClass('alert-success').removeClass('alert-danger').hide();
-                        resultsObj.addClass(result.alert).html(result.message);
-                        resultsObj.removeClass('d-none').fadeIn('slow').delay(4000).fadeOut('slow');
-                    }
-                }
-            });
-        }
+        // if (!error && actionURL != '' && actionURL != undefined) {
+        //     _this.addClass('loading');
+        //     $.ajax({
+        //         type: 'POST',
+        //         url: actionURL,
+        //         data: formObj.serialize(),
+        //         success: function (result) {
+        //             _this.removeClass('loading');
+        //             if (redirectVal != '' && redirectVal != undefined) {
+        //                 window.location.href = redirectVal;
+        //             } else {
+        //                 if (typeof (result) !== 'undefined' && result !== null) {
+        //                     result = $.parseJSON(result);
+        //                 }
+        //                 formObj.find('input[type=text],input[type=url],input[type=email],input[type=tel],input[type=password],textarea').each(function () {
+        //                     $(this).val('');
+        //                     $(this).removeClass('is-invalid');
+        //                 });
+        //                 formObj.find('.g-recaptcha').removeClass('is-invalid');
+        //                 formObj.find('input[type=checkbox],input[type=radio]').prop('checked', false);
+        //                 if (formObj.find('.g-recaptcha').length) {
+        //                     grecaptcha.reset();
+        //                 }
+        //                 resultsObj.removeClass('alert-success').removeClass('alert-danger').hide();
+        //                 resultsObj.addClass(result.alert).html(result.message);
+        //                 resultsObj.removeClass('d-none').fadeIn('slow').delay(4000).fadeOut('slow');
+        //             }
+        //         }
+        //     });
+        // }
         return false;
     });
 
