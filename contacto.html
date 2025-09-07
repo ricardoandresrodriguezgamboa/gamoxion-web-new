@@ -22,6 +22,7 @@
         <link rel="stylesheet" href="css/style.css"/>
         <link rel="stylesheet" href="css/responsive.css"/>
         <link rel="stylesheet" href="css/startup.css" />
+        <script src="https://www.google.com/recaptcha/api.js?render=6LeI2MArAAAAAPvclaXqotynrzkeSmSq1gYm2l-G"></script>
     </head>
     <body data-mobile-nav-style="classic">  
         <!-- start header -->
@@ -302,7 +303,7 @@
                 <div class="row row-cols-md-1 justify-content-center">
                     <div class="col-xl-9 overflow-hidden">
                         <!-- start contact form -->
-                        <form action="php/form.php" method="post" class="row contact-form-style-02" data-anime='{ "translateX": [0, 0], "opacity": [0,1], "duration": 600, "delay": 250, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        <form id="formContact" action="php/form.php" method="post" class="row contact-form-style-02" data-anime='{ "translateX": [0, 0], "opacity": [0,1], "duration": 600, "delay": 250, "staggervalue": 300, "easing": "easeOutQuad" }'>
                             <div class="col-md-6 mb-30px">
                                 <input class="input-name form-control required" type="text" name="name" placeholder="Nombre*" />
                             </div>
@@ -324,9 +325,9 @@
                             <div class="col-xl-6 col-md-5 text-center text-md-end sm-mt-20px">
                                 <input type="hidden" name="redirect" value="">
                                 <div class="group-custom-1 group-middle oh-desktop">
-                                    <button type="submit" class="g-recaptcha btn btn-gradient-emerald-blue-emerald-green btn-small btn-round-edge submit"
-                                    data-sitekey="6LcX77opAAAAAE3kkPeYCzny06nF0mefOYGiUBb0"
-                                    data-callback="onSubmit">Enviar mensaje</button>
+                                    <button type="submit" class="btn btn-gradient-emerald-blue-emerald-green btn-small btn-round-edge">
+                                        Enviar mensaje
+                                    </button>
                                   </div>
                             </div>
                             <div class="col-12">
@@ -445,5 +446,23 @@
         <script type="text/javascript" src="js/vendors.min.js"></script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCA56KqSJ11nQUw_tXgXyNMiPmQeM7EaSA&callback=initMap"></script>
         <script type="text/javascript" src="js/main.js"></script>
+        <script>
+            grecaptcha.ready(function() {
+            const form = document.getElementById('formContact');
+            form.addEventListener('submit', function(e) {
+                e.preventDefault(); // evitar envío directo
+                grecaptcha.execute('6LeI2MArAAAAAPvclaXqotynrzkeSmSq1gYm2l-G', {action: 'submit'}).then(function(token) {
+                    // agregamos el token al formulario
+                    let input = document.createElement("input");
+                    input.type = "hidden";
+                    input.name = "g-recaptcha-response";
+                    input.value = token;
+                    form.appendChild(input);
+                    // enviamos el formulario
+                    form.submit();
+                });
+            });
+        });
+        </script>
     </body>
 </html>
