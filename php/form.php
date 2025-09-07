@@ -86,7 +86,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
                 } else {
                     echo "<script type='text/javascript'>
                             alert('Debe completar todos los campos del formulario.');
-                            location.replace('http://gamoxion.com/#contacto');
+                            location.replace('http://gamoxion.com/contacto.html');
                           </script>";
                 }
 
