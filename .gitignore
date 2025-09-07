@@ -1,0 +1,22 @@
+# Archivos comprimidos
+*.zip
+
+# Archivos temporales del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de log
+*.log
+
+# Configuración de editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Node modules (si usas Node para algún build tool)
+node_modules/
+
+# Carpetas de build o dist (si generas minificados)
+dist/
+build/
