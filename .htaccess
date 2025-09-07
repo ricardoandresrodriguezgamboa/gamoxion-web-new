@@ -1,0 +1,11 @@
+# Asegúrate de que el módulo mod_rewrite esté activado
+RewriteEngine On
+
+# Forzar HTTPS y www
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ https://www.gamoxion.com/$1 [L,R=301]
+
+# Opcional: Redirigir solo www si quieres evitar duplicados
+# RewriteCond %{HTTP_HOST} !^www\. [NC]
+# RewriteRule ^(.*)$ https://www.gamoxion.com/$1 [L,R=301]
